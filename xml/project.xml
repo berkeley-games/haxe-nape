@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project>
+
+	<meta title="sandbox" package="com.bgs.sandbox" version="1.0.0" company="George Perry"/>
+
+    <app main="Main" path="../bin" file="sandbox"/>
+
+    <window background="#333333" fps="60" />
+    <window width="1280" height="720" unless="mobile" />
+    <!--<window width="0" height="0" if="html5" />-->
+    <window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+
+	<source path="../src"/>
+
+	<haxelib name="openfl"/>
+    <haxelib name="actuate"/>
+    <haxelib name="nape"/>
+    <haxedef name="fdb" if="flash" />
+
+	<assets path="../res" rename="assets" exclude="*.svg"/>
+	<icon path="../res/openfl1.png"/>
+
+    <window vsync="false" unless="web" orientation="landscape"/>
+
+    <android target-sdk-version="19" minimum-sdk-version="19"/>
+    <android install-location="preferExternal"/>
+    <android debuggable="false"/>
+
+    <aspectRatio>landscape</aspectRatio>
+    <autoOrients>false</autoOrients>
+
+    <certificate path="E:\Berkeley Game Studios\Projects\Current\Sandbox\Engineering\rig\android\sanbox.keystore" password="berkeley"/>
+
+</project>
